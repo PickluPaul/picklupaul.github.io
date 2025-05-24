@@ -1,658 +1,404 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Picklu Paul</title>
-    <meta name="description" content="Cybersecurity Engineer from Singapore with Infrastructure Automation, Python Development, Cloud Security, Site Reliability Engineer(SRE) Experience. Freelancer with US support role helping people with Devops, Personal websites in tech stack like AWS, Azure, GCP, Kubernetes, Docker, Ansible, Terraform, Linux, Security"/>
-    <link rel="shortcut icon" type="image/png" href="static/images/picks.jpeg"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="static/css/aos.css" rel="stylesheet">
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/styles/main.css" rel="stylesheet">
-   <meta property="og:title" content="Picklu Paul - Cybersecurity Leader" />
-	<meta property="og:description" content="Thought Leader in DevSecOps, Cloudsecurity, DevOps and SRE, Tech Consultant and Author />
-	<meta property="og:image" content="https://media.licdn.com/dms/image/D5603AQGTKSNJJKa4Gg/profile-displayphoto-shrink_800_800/0/1699525925536?e=1705536000&v=beta&t=T4d8f3HgJ91JTyjkbVIFmFygxRnC455cR3B8JhJxYC8" />
-	<meta property="og:url" content="https://picklupaul.github.io/" />
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-9422496860450806",
-    enable_page_level_ads: true
-  });
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picklu Paul | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-  <script type="text/javascript">
+<body>
+    <!-- Background Gradient -->
+    <div class="bg-gradient"></div>
 
- document.addEventListener('DOMContentLoaded', function() {
-    var parent = document.querySelector('.splitview'),
-        topPanel = parent.querySelector('.top'),
-        handle = parent.querySelector('.handle'),
-        skewHack = 0,
-        delta = 0;
-
-    // If the parent has .skewed class, set the skewHack var.
-    if (parent.className.indexOf('skewed') != -1) {
-        skewHack = 1000;
-    }
-
-    parent.addEventListener('mousemove', function(event) {
-        // Get the delta between the mouse position and center point.
-        delta = (event.clientX - window.innerWidth / 2) * 0.5;
-
-        // Move the handle.
-        handle.style.left = event.clientX + delta + 'px';
-
-        // Adjust the top panel width.
-        topPanel.style.width = event.clientX + skewHack + delta + 'px';
-    });
-});
-</script>
-<style type="text/css">
-  /* Reset. */
-
-
-/* Panels. */
-@media only screen and (max-width:480px){
-.gallery figure.cc-effect .h4,
-.gallery figure.cc-effect p {
-display: block;
-opacity: 1;
-font: 14px;
-}
-.gallery .cc-porfolio-image figure figcaption{
-background: rgba(0, 0, 0, 0.5);
-}
-.footer {
-     font-size: 5px;
-  }
-}
-
-.splitview {
-    position: relative;
-    width: 100%;
-    min-height: 45vw;
-    overflow: hidden;
-}
-
-.panel {
-    position: absolute;
-    width: 100vw;
-    min-height: 45vw;
-    overflow: hidden;
-}
-
-    .panel .content {
-        position: absolute;
-        width: 100vw;
-        min-height: 45vw;
-        color: #FFF;
-    }
-
-    .panel .description {
-        width: 25%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-    }
-
-    .panel img {
-        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
-        width: 35%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-.bottom {
-    background-color: rgb(44, 44, 44);
-    z-index: 1;
-}
-
-    .bottom .description {
-        right: 5%;
-    }
-
-.top {
-    background-color: rgb(77, 69, 173);
-    z-index: 2;
-    width: 50vw;
-
-    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
-}
-
-    .top .description {
-        left: 5%;
-    }
-
-/* Handle. */
-.handle {
-    height: 100%;
-    position: absolute;
-    display: block;
-    background-color: grey;
-    width: 5px;
-    top: 0;
-    left: 50%;
-    z-index: 3;
-}
-
-/* Skewed. */
-.skewed .handle {
-    top: 50%;
-    transform: rotate(30deg) translateY(-50%);
-    height: 200%;
-    -webkit-transform-origin: top;
-    -moz-transform-origin: top;
-    transform-origin: top;
-}
-
-.skewed .top {
-    transform: skew(-30deg);
-    margin-left: -1000px;
-    width: calc(50vw + 1000px);
-}
-
-.skewed .top .content {
-    transform: skew(30deg);
-    margin-left: 1000px;
-}
-
-/* Responsive. */
-@media (max-width: 900px) {
-    body {
-        font-size: 75%;
-    }
-}
-</style>
-  <body id="top">
-    <header>
-      <div class="profile-page sidebar-collapse">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-          <div class="container">
-            <div class="navbar-translate" id="greeting"><a class="navbar-brand" href="#" rel="tooltip"><i>NAMASTE!!!</i></a>
-              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo"> Picklu Paul </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
             </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Projects</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="page-content">
-      <div>
-<div class="profile-page">
-  <div class="wrapper">
-    <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('static/images/background.jpg');"></div>
-      <div class="container">
-        <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="static/images/picks.jpeg" alt="Image"/></a></div>
-          <div class="h2 title">Picklu Paul</div>
-          <p class="category text-white">Engineer, Author and Consultant</p><a class="btn btn-primary" href="https://docs.google.com/document/d/1FEWGV-DPQSU0feWpDE2F5ta0kA72_N1KQIH0E6Oz8z0" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" id="resume">Download CV</a><a class="btn btn-primary smooth-scroll mr-2" href="https://calendly.com/picklupaul " data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Consultation</a>
         </div>
-      </div>
-      <div class="section">
-        <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/picklu-paul" data-placement="left" rel="tooltip" title="Find me on LinkedIn"><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://x.com/picklupaul" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/PickluPaul" data-placement="right" rel="tooltip" title="Follow me on Github"><i class="fa fa-github"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="about">
-  <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">About</div>
-            <p>Hello! I am Picklu. Engineer by profession, artist by chance, ambitious by nature and Indian by birth.</p>
-            <p>I am an accomplished Cybersecurity Professional based in Singapore. When not at work, I play billiards regularly, chess occasionally and football virtually (yeah!!!..in PS4). Given a chance, I would love to explore Europe and Australia.
-            Given a choice, I would love to try all Indian cuisine. </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">picklupaul93@gmail.com</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-              <div class="col-sm-8">Singapore</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-              <div class="col-sm-8">English, Bengali, Hindi</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="skill">
-  <div class="container">
-    <div class="h4 text-center mb-4 title">Professional Skills</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Cybersecurity</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Site Reliability Engineering</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">DevSecOps</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Systems Designing</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Automation</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Web Development</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div><span class="progress-value"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 ml-auto mr-auto">
-        <div class="h4 text-center mb-4 title">Projects</div>
-        <div class="nav-align-center">
-          <ul class="nav nav-pills nav-pills-primary" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" data-placement="left" href="#web-development" role="tablist" rel="tooltip" title="Professional Projects"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" data-placement="right" href="#graphic-design" role="tablist" rel="tooltip" title="Hobbie Projects"><i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="tab-content gallery mt-5">
-      <div class="tab-pane active" id="web-development">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-	 <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                  <figure class="cc-effect"><img src="static/images/project-2-3.jpg" alt="Image" style="height: 350px;width: 600px"/>
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">Published My Book</div>
-                      <p>This book is your one-stop shop for mastering DevSecOps in AWS. With it, you'll be able to protect your applications and data, and achieve operational excellence in the cloud.. </p>
-                    </figcaption>
-                  </figure></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom" style="background-image: url('static/images/blue.jpg');">
-                  <figure class="cc-effect"><img src="static/images/project-1-1.png" alt="Image" style="height: 400px;width: 600px" />
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">User management with SSO</div>
-                      <p >Developed an application which completey automates onboarding, managing and deposing users in an organization. Furthur the tool also regulates ssh access, sends password-expiry email notification and generates monthly reports. <br>
-                      Tools used: Python, Javascript, HTML, CSS, Jira, Okta/Jumpcloud, G-form, Workday, AWS(ec2,s3,api-gateway,cloudfront,dynamodb)</p>
-                    </figcaption>
-                  </figure></div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="profile-image">
+                <img src="./static/images/picks.jpeg" alt="Picklu Paul" class="profile-pic">
             </div>
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                  <figure class="cc-effect"><img src="static/images/project-3-1.jpg" alt="Image" style="height: 380px;width: 600px"/>
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">Traffic Shifting tool</div>
-                      <p>This is a Web Application which serves as single User Interface to manage the dns traffic for all customers and patners associated with the organization. It was primarly used by NOC and Support Engineers to monitor and migrate realtime dns traffic.
-                      <br>TOOls used: Python-Flask, Jinja2, HTML, CSS, Javascript, Akamai Luna, Docker, Kubernetes.
-                     </p>
-                    </figcaption>
-                  </figure></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                  <figure class="cc-effect"><img src="static/images/project-4-1.jpg" alt="Image" style="height: 370px;width: 600px"/>
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">Application Load Testing</div>
-                      <p>This tool is used to load test the various api endpoint exposed by the application. The tool is triggered by jenkins and the result is published as html page.<br>
-                        Tools Used: Python, Tsung, Jenkins
-
-                       </p>
-                    </figcaption>
-                  </figure></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="graphic-design" role="tabpanel">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                  <figure class="cc-effect"><img src="static/images/food.jpg" alt="Image" alt="Image" style="height: 400px;width: 600px" />
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">CanteenApp</div>
-                      <p>With this project, I aimed to reduced the wait time and avoid long queues commonly seen in Office canteens. This solution had a Mobile App where the user can book their Meals and get notification when the food was ready. The vendor will have a web application to display the food items, also take and update the orders.<br>
-                      Tools Used: LAMP stack with Firebase at backend.</p>
-                    </figcaption>
-                  </figure></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                  <figure class="cc-effect"><img src="static/images/browser.png" alt="Image" style="height: 350px;width: 600px"/>
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">Fun With Selenium</div>
-                      <p>From greeting and spaming on whatsapp to downloading multiple songs from Youtube, everything was reduced to a single click with selenium. I used it extensively for numerous browser tasks including the above!!. Best tool for lazy folks. </p>
-                    </figcaption>
-                  </figure></div>
-            </div>
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                  <figure class="cc-effect"><img src="static/images/robot.jpg" alt="Image" style="height: 350px;width: 600px"//>
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">Home Patrol Robot</div>
-                      <p>This prototype was build during finally year of Engineering. This robot ensure home security by detecting buglary and raising alarm and notification. It detected any gas leakage as well. Also it had the ability to mopped the floor and keep house clean.</p>
-                    </figcaption>
-                  </figure></div>
-               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                  <figure class="cc-effect"><img src="static/images/freelance.jpg" alt="Image" style="height: 400px;width: 600px"/>
-                    <figcaption>
-                      <div class="h4" style="height: 50px;margin-top: 20px;">Freelancing</div>
-                      <p>On Several occasion, I freelanced to build web-solution for different businesses. Also I have helped people to build, host and manage their personal websites. I have also provided various automation solution to multiple clients.
-                      <br> </p>
-                    </figcaption>
-                  </figure></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section" id="experience">
-  <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <div class="h5">Grab</div>
-            <p>Singapore</p>
-            <p>Jan 2019 – Present</p>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Senior Engineering Manager, CyberSecurity</div>
-            <p>
-• Driving Cloud Security for multicloud environment(GCP, AWS, Ali Cloud) by building Compliance, Governance, Automation and Observability.<br>
-• Leading Devsecops initiatives to design and build tools and platforms for security CI/CD Pipeline, Security Monitoring (SIEM), Vulnerability and Patch Management, Security Vault, etc.<br>
-• Work closely with CTO and Head of Engineering to create and transform Infosec vision, strategies and roadmaps into OKRs, stories, tasks for engineer in my team.<br>
-• Architecting and building Enterprise-Grade IAM solution which is deeply integrated with multiple SSO platforms, manages access approval, regulates SSH access to environments, audit logging, password notifications and generates a report.<br>
-• Building solutions for automating Infrastructure provisioning on the cloud. The solution enables the IaC model using ansible and terraform and is integrated with Git for reliable Source Code Management.<br>
-• Designing and implementing Elasticsearch-Kibana cluster with custom shipper for Data Analytics.<br>
-• Dockerizing and migrating application to Kubernetes Cluster.<br>
-• Implementing efficient process management by automating workflows for tools like Jira, Bitbucket, Okta, Pagerduty, Tenable, Slack etc.<br>
-• Software evaluations, cost negotiations and vendor management to save about 70,000 USD annually for the company.<br>
-• Collaborating with compliance team to facilitate and ensure successful audits like PCI DSS, BNM, Internal Audits, etc<br>
-          </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <div class="h5">Quotient Technologies</div>
-            <p>Bangalore</p>
-           <p>May 2018 – Jan 2019</p>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Senior DevOps and Automation Engineer</div>
-            <p>
-• Building several in-house tools used for Security Patching Automation, Application Load
-Testing, File Migration and Sharing and several other similar tools.<br>
-• Working on Rest API applications development, enhancement and support.<br>
-• Collaborating with Release Team on Code Pipeline Management using CI/CD and Docker.<br>
-• Working on several ansible projects to automate operational task for NOC engineers.<br>
-• Migrating several applications from AWS and On-premise Infrastructure to GCP and Azure.<br>
-• Providing L3- level support during the escalation calls, RCAs etc.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <div class="h5">Cisco</div>
-            <p>Bangalore</p>
-            <p>July 2015 – April 2018</p>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">DevOps and Automation Engineer</div>
-            <p>
-• As a DevOps Engineer, I was involved in Development, Testing and Operations work
-throughout the entire software/application lifecycle for multiple projects in the CMS (Cisco
-Cloud and Manage Services) team.<br>
-• As a Python Automation Engineer, I have developed a web-application using Python Flask
-Framework which help the DNS traffic shift in the Akamai Control center.<br>
-• Streamlined and Centralized the Change Management Process for entire platform using
-Selenium for Automation.<br>
-• Worked on numerous projects to automate several application deployments in production
-and test environment for Build and Release Team.<br>
-• Smart Ticket Bonding project as a part of Cloud Managed Services Team.
-• Manually Build, Deploy, Upgrade, Integrate and Test several Network Monitoring
-applications for 50+ customers.<br>
-• Worked and coordinated with Engineering Team, Operations Team, Incident Management
-and Problem Management Team to solve several P1 cases.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
+            <h1>Hi, I'm <span class="accent">Picklu Paul</span></h1>
+            <p class="subtitle">
+                Engineering leader, author, speaker and consultant<br>
+                who is passionate about driving AI security<br>
+                and DevSecOps at scale.
+            </p>
             
-            <div class="h5">Philips</div>
-            <p>Bangalore</p>
-            <p>2014</p>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Intern</div>
-            <p>
-• Developed a web application named DIO (Dicom Image Organizer) which is used to
-efficiently search the medical images from a large data repository and display them to the
-user.<br>
-• On completion of the project phases, various demonstration was given to several panel of
-Directors, Manager and Team Leads. The work and learning were appreciated, and a full-
-time employment was also offered for a position of software developer.<br></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section">
-  <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Education</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2011 - 2015</p>
-            <div class="h5">Bachelor of Engineering </div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">SJCE, Mysore</div>
-            <p class="category">Autonomous Institute, Affliated to VTU. </p>
-            <p>• Graduated with First Class Distinction having CGPA of 9.3 out of 10.<br>
-• Worked with both hardwares and softwares as a part of multiple projects.<br>
-• Participated and won several Hackathons, Tech quizzes, seminars and other co-curricular
-activities.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2009 - 2011</p>
-            <div class="h5">Higher Secondary School</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">ST. ANTHONY’S HIGHER SECONDARY SCHOOL, Shillong</div>
-            <p class="category">Science and Mathematics, MBOSE</p>
-            <p>• Scored average of 90% in Physic, Chemistry and Mathematics.<br>
-• Was among the topper in the state, based on which sponsorship was given by Govt. of India
-to pursue engineering.<br>
-• Received several scholarships.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="hero-btns">
+                <a href="https://docs.google.com/document/d/1FEWGV-DPQSU0feWpDE2F5ta0kA72_N1KQIH0E6Oz8z0" class="btn primary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <a href="https://calendly.com/picklupaul" class="btn secondary">
+                    <i class="fas fa-calendar-check"></i> Book Consultation
+                </a>
+            </div>
 
-<div class="section" id="reference">
-  <div class="container cc-reference">
-    <div class="h4 mb-4 text-center title">Recent Activities</div>
-    <div class="card" data-aos="zoom-in">
-      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-          <li data-target="#cc-Indicators" data-slide-to="1"></li>
-          <li data-target="#cc-Indicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="static/images/hotstar.png" alt="Image"/>
-                <div class="h5 pt-2">Hotstar</div>
-                <p class="category">Free Match</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p class="h4 mb-4 text-center title"> Ipl is Coming!!! Want to watch free Matches on hotstar ? Get in touch :)</p>
-              </div>
+            <div class="social-links-container">
+                <div class="social-links">
+                    <div class="email-container">
+                        <button class="social-link" onclick="toggleEmail()">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                        <div class="email-popup" id="emailPopup">
+                            <span>picklupaul@gmail.com</span>
+                            <button class="copy-btn" onclick="copyEmail()">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="https://linkedin.com/in/yourprofile" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="static/images/quora.jpg" alt="Image"/>
-                <div class="h5 pt-2">Quora</div>
-                <p class="category">Like it? Upvote</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> It all started with the very word "CISCO". Since the time I heard about this company I dreamt a dream to get placed in this company. Each day I prepared harder and prayed more. I made it sure to give my 200%. Finally the moment came<a href="https://qr.ae/TW7HkO">(Read More)</a><br><br>
-                INDIA vs PAKISTAN ,Finals of ICC Champions Trophy.
-It was Sunday which I vividly remember. I was sitting in a restaurant, famished and desperately waiting for the food . The tv was telecasting the pre-match ceremonies where cricket veterans were discussing the pitch conditions and speculating a great match.<a href="https://qr.ae/TW7HAn">(Read More)</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="static/images/teer.jpg" alt="Image"/>
-                <div class="h5 pt-2">Blog</div>
-                <p class="category">Try your luck</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Tir: A Game of Dreams and Luck. “Tir” also known as archery gambling is the most popular word in Shillong. It was more of a mythical story that drew me into the game. <a href="https://www.mapsofindia.com/india-tour/shillong/tir-a-game-of-dreams-and-luck/">(Read More)</a><br><br>
-                  <b> Sounds Fun? To try get in touch.</b></p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-    </div>
+    </section>
 
-   <footer class="footer">
-      <div class="container text-center"><a class="cc-facebook btn btn-link" href="https://www.facebook.com/picklu.paul.1"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="https://twitter.com/paul_picks"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="https://www.quora.com/profile/Picklu-Paul"><i class="fa fa-quora fa-2x" aria-hidden="true"></i></a></div>
-      <div><center>Get In Touch</center></div>
-      <br><br>
-     <div class="splitview skewed">
-        <div class="panel bottom">
-            <div class="content">
-                <div class="description">
-                  <h1>Picklu Paul.</h1>
-                    <p>&copy Copyright Reserved.<br>This website is powered by github.io .</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container glass-card">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm a <strong>Engineering leader</strong>, <strong>author</strong>, and <strong>consultant</strong> with 10+ years of experience building and scaling <strong>AI security</strong>, <strong>DevSecOps</strong>, and <strong>platform engineering</strong> teams. At <strong>Grab</strong>, I lead <strong>AI security</strong>—developing an <strong>LLM-powered triaging engine</strong> and establishing <strong>AI guardrails</strong>, cutting false positives by 85%. I've led security and infrastructure functions across <strong>AWS</strong>, <strong>GCP</strong>, and on-prem, with hands-on expertise in <strong>Python</strong>, <strong>Kubernetes</strong>, <strong>Terraform</strong>, and <strong>GitOps</strong>. As the author of <em>Demystifying DevSecOps in AWS</em> and a keynote speaker at executive conferences in <strong>Singapore</strong>, <strong>India</strong>, <strong>Indonesia</strong>, and <strong>Thailand</strong>, I bring a strategic, hands-on approach to scaling secure, high-impact systems.
+                </p>
+                
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <!-- Cybersecurity -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="skill-content">
+                        <div class="skill-group">
+                            <h4>Cloud Native Security</h4>
+                            <div class="skill-tags">
+                                <span>GCP</span>
+                                <span>AWS</span>
+                                <span>Azure</span>
+                                <span>CSPM</span>
+                                <span>WAF</span>
+                                <span>Cloudflare</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>DevSecOps Pipeline</h4>
+                            <div class="skill-tags">
+                                <span>SCA</span>
+                                <span>SAST</span>
+                                <span>DAST</span>
+                                <span>Threat Modeling</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Vulnerability Management</h4>
+                            <div class="skill-tags">
+                                <span>Nessus</span>
+                                <span>Qualys</span>
+                                <span>Wiz</span>
+                                <span>OWASP Top 10</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Audit and Compliance</h4>
+                            <div class="skill-tags">
+                                <span>ISO 27001</span>
+                                <span>MAS Audit</span>
+                                <span>Bank Indonesia</span>
+                                <span>PCI DSS</span>
+                                <span>NIST</span>
+                                <span>CIS</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Security Incident Response</h4>
+                            <div class="skill-tags">
+                                <span>EDR/XDR</span>
+                                <span>DLP</span>
+                                <span>Wazuh</span>
+                                <span>Splunk</span>
+                                <span>Azure Sentinel</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Container Security</h4>
+                            <div class="skill-tags">
+                                <span>AquaSec</span>
+                                <span>Bridgecrew</span>
+                                <span>Falco</span>
+                                <span>Chainguard</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Identity & Access Management</h4>
+                            <div class="skill-tags">
+                                <span>Okta</span>
+                                <span>Jumpcloud SSO</span>
+                                <span>Vault</span>
+                                <span>Cyberark PAM</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/original-image.jpg" alt="Original">
-            </div>
-        </div>
-
-        <div class="panel top">
-            <div class="content">
-                <div class="description">
-                     <h1>Signing Off...</h1>
-                    <p>Until next time!!!</p>
+                <!-- DevOps/SRE -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Platform Engineering/SRE</h3>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Infrastructure</h4>
+                        <div class="skill-tags">
+                            <span>AWS</span>
+                            <span>GCP</span>
+                            <span>Azure</span>
+                            <span>On-premise</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Monitoring & Observability</h4>
+                        <div class="skill-tags">
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                            <span>Datadog</span>
+                            <span>ELK</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>DevOps Tools</h4>
+                        <div class="skill-tags">
+                            <span>GitLab</span>
+                            <span>Github Actions</span>
+                            <span>Azure DevOps</span>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Operating Systems</h4>
+                        <div class="skill-tags">
+                            <span>Unix</span>
+                            <span>Linux</span>
+                            <span>Windows</span>
+                        </div>
+                    </div>
                 </div>
 
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/duotone-image.jpg" alt="Duotone">
+                <!-- Development/Automation -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Development</h3>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Javascript</span>
+                            <span>Go Lang</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Artificial Intelligence (AI)</h4>
+                        <div class="skill-tags">
+                            <span>Azure OpenAI</span>
+                            <span>RAG</span>
+                            <span>VectorDB</span>
+                            <span>Langchain</span>
+                            <span>Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Infrastructure as Code</h4>
+                        <div class="skill-tags">
+                            <span>Terraform</span>
+                            <span>Ansible</span>
+                            <span>OPA</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="handle"></div>
-    </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Senior Engineering Leader</h3>
+                            <span class="timeline-date">Jan 2019 – Present</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            <strong>Grab</strong> | Singapore
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Founding member of Grab's cybersecurity org; built multi-cloud security across GCP, AWS, and Azure.</li>
+                            <li>Led development of an <strong>LLM-powered code triaging engine</strong>, reducing false positives by 85%.</li>
+                            <li>Established <strong>AI security guardrails</strong> and scaled <strong>DevSecOps</strong> across CI/CD pipelines.</li>
+                            <li>Built an in-house <strong>cloud observability platform</strong> integrating logs, metrics, and threat intel.</li>
+                            <li>Designed and implemented enterprise-grade <strong>IAM</strong> with SSO integration and audit readiness.</li>
+                            <li>Enabled compliance for <strong>PCI-DSS, ISO 27001, NIST</strong>, and regional regulators (MAS, GDPR, etc.).</li>
+                            <li>Partnered with CTO to align InfoSec strategy with engineering OKRs and roadmaps.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>DevOps and Automation Lead</h3>
+                            <span class="timeline-date">May 2018 – Dec 2018</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            <strong>Quotient</strong> | Bengaluru
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built Python-based traffic management platform; cut incident response time by 60%.</li>
+                            <li>Led cloud migration and hardened Kubernetes infrastructure security.</li>
+                            <li>Automated workflows across Jira, Okta, Slack, and security tools.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Senior Software Engineer</h3>
+                            <span class="timeline-date">Jul 2015 – Jun 2018</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            <strong>Cisco</strong> | Bengaluru
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Managed Linux systems and performance monitoring for 1,000+ servers.</li>
+                            <li>Automated operations using REST APIs, Selenium, and CI/CD pipelines (Jenkins, GitLab).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Software Engineer</h3>
+                            <span class="timeline-date">2014 – 2015</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            <strong>Philips</strong> | Bengaluru
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built a full-stack medical imaging app (DIO) in Python for efficient DICOM search and retrieval.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Book Project -->
+                <div class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>My Book: Demystifying DevSecOps in AWS</h3>
+                    <p class="project-description">
+                        A comprehensive guide to mastering DevSecOps in AWS, published worldwide.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">DevSecOps</span>
+                        <span class="tag">Cloud Security</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://devsecopsinaws.github.io/" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Buy Here
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kubernetes Project -->
+                <div class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Kubernetes Network Security</h3>
+                    <p class="project-description">
+                        Network security implementation for multi-tier applications in Kubernetes with controlled traffic and monitoring.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Network Security</span>
+                        <span class="tag">DevSecOps</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/PickluPaul/k8s_network_security" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Made with <i class="fas fa-heart" style="color: #ff4d4d;"></i> by Picklu Paul
+            </p>
+        </div>
     </footer>
-    <script src="static/js/core/jquery.3.2.1.min.js"></script>
-    <script src="static/js/core/popper.min.js"></script>
-    <script src="static/js/core/bootstrap.min.js"></script>
-    <script src="static/js/now-ui-kit.js?v=1.1.0"></script>
-    <script src="static/js/aos.js"></script>
-    <script src="static/scripts/main.js"></script>
-  </body>
+
+    <!-- Add this before </body> -->
+    <script>
+        function toggleEmail() {
+            const popup = document.getElementById('emailPopup');
+            popup.classList.toggle('show');
+        }
+
+        function copyEmail() {
+            const email = 'picklupaul@gmail.com';
+            navigator.clipboard.writeText(email);
+            alert('Email copied!');
+        }
+    </script>
+</body>
 </html>
