@@ -390,6 +390,9 @@
         </div>
     </footer>
 
+    <!-- Add this div for the notification -->
+    <div id="copyNotification" class="copy-notification">Email copied to clipboard!</div>
+
     <!-- Add this before </body> -->
     <script>
         function toggleEmail() {
@@ -398,8 +401,16 @@
         }
 
         function copyEmail() {
-            const email = 'picklupaul@gmail.com';
-            navigator.clipboard.writeText(email);
+            const email = 'picklu.paul@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                const notification = document.getElementById('copyNotification');
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy email: ', err);
+            });
         }
 
         document.addEventListener('DOMContentLoaded', function() {

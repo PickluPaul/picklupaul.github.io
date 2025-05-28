@@ -863,3 +863,22 @@ h2 {
     }
 } */ 
 } 
+
+.copy-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--glass);
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.copy-notification.show {
+    transform: translateY(0);
+    opacity: 1;
+} 
