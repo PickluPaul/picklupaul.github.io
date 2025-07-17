@@ -391,6 +391,7 @@
     </footer>
 
     <!-- Add this div for the notification -->
+    <div id="copyNotification" class="notification">Email copied to clipboard!</div>
 
     <!-- Add this before </body> -->
     <script>
@@ -400,16 +401,42 @@
         }
 
         function copyEmail() {
-            const email = 'picklu.paul@gmail.com';
-            navigator.clipboard.writeText(email).then(() => {
-                const notification = document.getElementById('copyNotification');
-                notification.classList.add('show');
-                setTimeout(() => {
-                    notification.classList.remove('show');
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy email: ', err);
-            });
+            const email = 'picklupaul93@gmail.com';
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                // Use Clipboard API if available
+                navigator.clipboard.writeText(email).then(() => {
+                    showNotification();
+                }).catch(err => {
+                    console.error('Failed to copy email using Clipboard API: ', err);
+                    fallbackCopyEmail(email);
+                });
+            } else {
+                // Fallback for unsupported browsers
+                fallbackCopyEmail(email);
+            }
+        }
+
+        function fallbackCopyEmail(email) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                showNotification();
+            } catch (err) {
+                console.error('Fallback: Failed to copy email: ', err);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        function showNotification() {
+            const notification = document.getElementById('copyNotification');
+            notification.classList.add('show');
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 2000);
         }
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -437,5 +464,24 @@
             });
         });
     </script>
+
+    <style>
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .notification.show {
+            opacity: 1;
+        }
+    </style>
 </body>
 </html>
